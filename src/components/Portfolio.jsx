@@ -179,7 +179,7 @@ const Portfolio = () => {
 													/>
 												</div>
 												<div className="mobile_title">
-													<h3>QuickJot</h3>
+													<h3>ToTheMoon</h3>
 													<span>ReactJS, Flask, PostgreSQL</span>
 												</div>
 											</div>
@@ -195,7 +195,7 @@ const Portfolio = () => {
 													<div id="project-details-links">
 														<h5 style={{ marginRight: 20 }} id="project-link">
 															<a
-																href={`https://quick-jot-app.herokuapp.com/`}
+																href={`https://equilibrium.herokuapp.com/`}
 																target="_blank"
 																rel="noreferrer"
 															>
@@ -205,7 +205,7 @@ const Portfolio = () => {
 														</h5>
 														<h5 id="project-link">
 															<a
-																href={`https://github.com/parkerbo/QuickJot`}
+																href={`https://github.com/benthere914/medium-clone-equilibrium`}
 																target="_blank"
 																rel="noreferrer"
 															>
