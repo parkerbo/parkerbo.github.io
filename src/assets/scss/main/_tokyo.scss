@@ -825,6 +825,16 @@ h6 {
   float: left;
   margin-bottom: 62px;
 }
+#download-resume a{
+  color:white;
+}
+.tokyo_tm_title-resume {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  margin-bottom: 10px;
+}
 .tokyo_tm_title h3 {
   font-weight: 800;
   font-family: "Montserrat";
@@ -899,7 +909,7 @@ h6 {
 .tokyo_tm_portfolio .portfolio_list li {
   margin: 0px 0px 50px 0px;
   float: left;
-  width: 50%;
+  width: 100%;
   padding-left: 50px;
   @media (max-width: 576px) {
     margin: 0px 0px 30px 0px;
@@ -922,6 +932,22 @@ h6 {
       transform: scale(1.1);
     }
   }
+}
+#project-link a{
+  color: white;
+  text-decoration: none;
+}
+#project-link a:hover{
+  text-decoration: underline;
+}
+#project-details{
+  display: flex;
+  margin-bottom: 20px;
+}
+#project-details-links{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 .tokyo_tm_portfolio .portfolio_list li .inner img {
   width: 100%;
@@ -1001,15 +1027,14 @@ ul.react-tabs__tab-list {
 }
 
 /*---------------------------------------------------*/
-/*	07) TOKYO NEWS 
+/*	07) TOKYO NEWS
 /*---------------------------------------------------*/
 
 .tokyo_tm_news {
   width: 100%;
-  height: auto;
   clear: both;
   float: left;
-  padding: 100px 0px 45px 0px;
+  padding: 50px 0px 45px 0px;
 }
 .tokyo_tm_news ul {
   margin: 0px 0px 0px -50px;
@@ -1784,7 +1809,7 @@ body.modal {
 }
 
 /*---------------------------------------------------*/
-/*	11) TOKYO 404 
+/*	11) TOKYO 404
 /*---------------------------------------------------*/
 
 .tokyo_tm_section .container {

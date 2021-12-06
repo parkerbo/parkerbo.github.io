@@ -17,7 +17,7 @@ const HomeDark = () => {
           <div className="leftpart">
             <div className="leftpart_inner">
               <div className="logo">
-               
+
               </div>
               {/* END LOGO */}
 
@@ -53,7 +53,7 @@ const HomeDark = () => {
                       src="/assets/img/svg/paper.svg"
                       alt="paper"
                     />
-                    <span className="menu_content">News</span>
+                    <span className="menu_content">Resume</span>
                   </Tab>
                   <Tab>
                     <img
