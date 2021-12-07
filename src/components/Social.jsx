@@ -20,7 +20,7 @@ const SocialShare = [
 const Social = () => {
 	return (
 		<>
-			<ul className="social">
+			<ul className="social" style={{display:"flex", alignItems:"center"}} >
 				<li>
 					<a
 						href={`https://www.linkedin.com/in/parkerbolick/`}
@@ -39,7 +39,7 @@ const Social = () => {
 						<BsGithub size="5rem" />
 					</a>
 				</li>
-				<li>
+				<li style={{marginBottom: 10}}>
 					<a href="mailto:bolickparker@gmail.com">bolickparker@gmail.com</a>
 				</li>
 			</ul>

@@ -259,11 +259,10 @@ const Portfolio = () => {
 					<div className="box_inner">
 						<div className="description_wrap scrollable">
 							<div className="image">
-								<img src="assets/img/thumbs/4-3.jpg" alt="tumb" />
 								<div
 									className="main"
 									style={{
-										backgroundImage: "url(assets/img/portfolio/6.jpg)",
+										backgroundImage: "url(assets/img/portfolio/OpenBoard2.png)",
 									}}
 								></div>
 							</div>
@@ -276,37 +275,49 @@ const Portfolio = () => {
 							<div className="main_details">
 								<div className="textbox">
 									<p>
-										We live in a world where we need to move quickly and iterate
-										on our ideas as flexibly as possible. Building mockups
-										strikes the ideal balance between true-life representation
-										of the end product and ease of modification.
-									</p>
-									<p>
-										Mockups are useful both for the creative phase of the
-										project - for instance when you're trying to figure out your
-										user flows or the proper visual hierarchy - and the
-										production phase when they will represent the target
-										product. Making mockups a part of your creative and
-										development process allows you to quickly and easily ideate.
+										OpenBoard is a task management application oriented towards
+										bug tracking for software engineering projects. Users can
+										create project boards and tasks within projects to monitor,
+										organize, update and close with the help of their team.
+										OpenBoard is a clone of the project management website
+										Asana.
 									</p>
 								</div>
 								<div className="detailbox">
 									<ul>
 										<li>
-											<span className="first">Client</span>
-											<span>Alvaro Morata</span>
+											<span className="first">Technologies Used</span>
+											<span>
+												JavaScript | React | Redux | Flask | SQLAlchemy
+											</span>
 										</li>
 										<li>
-											<span className="first">Category</span>
-											<span>Details</span>
+											<span className="first">Created</span>
+											<span>November 2021</span>
 										</li>
 										<li>
-											<span className="first">Date</span>
-											<span>March 07, 2021</span>
-										</li>
-										<li>
-											<span className="first">Share</span>
-											<Social />
+											<span className="first">Links</span>
+											<div id="project-details-links">
+												<h5 style={{ marginRight: 20 }} id="project-link">
+													<a
+														href={`https://openboard-app.herokuapp.com/`}
+														target="_blank"
+														rel="noreferrer"
+													>
+														{" "}
+														Live{" "}
+													</a>
+												</h5>
+												<h5 id="project-link">
+													<a
+														href={`https://github.com/parkerbo/OpenBoard`}
+														target="_blank"
+														rel="noreferrer"
+													>
+														Repo
+													</a>
+												</h5>
+											</div>
 											{/* END SOCIAL SHARE */}
 										</li>
 									</ul>
@@ -323,40 +334,14 @@ const Portfolio = () => {
 												<div
 													className="main"
 													style={{
-														backgroundImage: "url(assets/img/portfolio/8.jpg)",
+														backgroundImage: "url(assets/img/portfolio/OpenBoard3.png)",
 													}}
 												></div>
 											</div>
 										</div>
 									</li>
 									{/* END SHOT */}
-									<li>
-										<div className="list_inner">
-											<div className="my_image">
-												<img src="img/thumbs/4-2.jpg" alt="thumb" />
-												<div
-													className="main"
-													style={{
-														backgroundImage: "url(assets/img/portfolio/2.jpg)",
-													}}
-												></div>
-											</div>
-										</div>
-									</li>
-									{/* END SHOT */}
-									<li>
-										<div className="list_inner">
-											<div className="my_image">
-												<img src="img/thumbs/4-2.jpg" alt="thumb" />
-												<div
-													className="main"
-													style={{
-														backgroundImage: "url(assets/img/portfolio/3.jpg)",
-													}}
-												></div>
-											</div>
-										</div>
-									</li>
+
 									{/* END SHOT */}
 								</ul>
 							</div>
