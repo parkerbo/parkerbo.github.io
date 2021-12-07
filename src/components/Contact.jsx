@@ -5,27 +5,27 @@ import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [viewport, setViewport] = useState({
-    latitude: 40.712776,
-    longitude: -74.005974,
-    zoom: 8,
+    latitude: 33.741269,
+    longitude: -84.399363,
+    zoom: 10,
   });
 
   function sendEmail(e) {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "service_n4mkhz9",
-        "template_ugoztxr",
-        e.target,
-        "user_vYmDSd9PwIuRXUQEDjYwN"
-      )
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+			.sendForm(
+				"service_pflm1pp",
+				"template_bvfgwo4",
+				e.target,
+				"user_6jvehjVpFJN55tFp9Xdzq"
+			)
+			.then((res) => {
+				console.log(res);
+			})
+			.catch((err) => {
+				console.log(err);
+			});
 
     e.target.reset();
   }
@@ -46,7 +46,7 @@ const Contact = () => {
         <div className="map_wrap">
           <div className="map">
             <ReactMapGL
-              mapStyle={"mapbox://style/mapbox/dark-v9"}
+              mapStyle={"mapbox://style/mapbox/streets-v9"}
               mapboxApiAccessToken="pk.eyJ1IjoiYmF5YXppZGgiLCJhIjoiY2tvemdwc3ByMDg1YzJubzQxcDR0cDR3dyJ9.s1zXEb5OPqgBDcmupj3GBA"
               {...viewport}
               onViewportChange={(nextViewport) => setViewport(nextViewport)}
