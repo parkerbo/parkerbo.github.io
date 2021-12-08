@@ -37,7 +37,12 @@ body {
   color: #767676;
   box-sizing: border-box;
 }
-svg {
+.tokyo_tm_contact svg {
+  fill: currentcolor;
+  width: 25px;
+  height: 25px;
+}
+.social svg {
   fill: currentcolor;
   width: 25px;
   height: 25px;
@@ -659,6 +664,8 @@ h6 {
 .tokyo_progress {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-wrap: wrap;
   clear: both;
   float: left;
   padding-top: 33px;
@@ -2156,4 +2163,24 @@ body.modal {
 .tokyo_tm_portfolio .portfolio_filter ul li .inner:hover .mobile_title {
   -webkit-transform: translateY(0);
   transform: translateY(0);
+}
+
+#skill-block{
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+#skill-icons{
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-evenly;
+}
+#skill-title{
+  display:flex;
+  justify-content: center;
 }

@@ -1,22 +1,38 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import Brand from "./Brand";
+import {
+	SiJavascript,
+	SiPython,
+	SiReact,
+	SiRedux,
+	SiHtml5,
+  SiCss3,
+  SiExpress,
+  SiFlask,
+  SiSequelize,
+  SiPostgresql
+
+} from "react-icons/si";
 
 Modal.setAppElement("#root");
 
 const About = () => {
-  const [isOpen, setIsOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
 
-  function toggleModal() {
-    setIsOpen(!isOpen);
-  }
+	function toggleModal() {
+		setIsOpen(!isOpen);
+	}
 
-  return (
+	return (
 		<>
 			<div className="tokyo_tm_about">
 				<div className="about_image ">
-					<img src="assets/img/slider/Parker-About.JPG" alt="about"
-          style={{height: 400, objectFit:"cover"}}/>
+					<img
+						src="assets/img/slider/Parker-About.JPG"
+						alt="about"
+						style={{ height: 400, objectFit: "cover" }}
+					/>
 				</div>
 				{/* <div className="o-video">
           <iframe src="https://www.youtube.com/embed/0yW7w8F2TVA"></iframe>
@@ -34,12 +50,6 @@ const About = () => {
 								solving process and seeing my idea come to life. Browse my
 								portfolio to take a look at my work!
 							</p>
-							<div className="tokyo_tm_button">
-								<button onClick={toggleModal} className="ib-button">
-									Read More
-								</button>
-							</div>
-							{/* END TOKYO BUTTON */}
 						</div>
 						{/* END LEFT */}
 						<div className="right">
@@ -82,168 +92,56 @@ const About = () => {
 				</div>
 			</div>
 
-			{/* START ABOUT POPUP BOX */}
-			<Modal
-				isOpen={isOpen}
-				onRequestClose={toggleModal}
-				contentLabel="My dialog"
-				className="mymodal"
-				overlayClassName="myoverlay"
-				closeTimeoutMS={500}
-			>
-				<div className="tokyo_tm_modalbox_about">
-					<button className="close-modal" onClick={toggleModal}>
-						<img src="assets/img/svg/cancel.svg" alt="close icon" />
-					</button>
-					{/* END POPUP CLOSE BUTTON */}
-					<div className="box-inner">
-						<div
-							className="description_wrap scrollable"
-							data-aos="fade-right"
-							data-aos-duration="1200"
-						>
-							<div className="my_box">
-								<div className="left">
-									<div className="about_title">
-										<h3>Skills</h3>
-									</div>
-									{/* END ABOUT TITLE */}
+			<div className="my_box">
+				<div className="left">
+					<div className="about_title">
+						<h3>Skills</h3>
+					</div>
+					{/* END ABOUT TITLE */}
 
-									<div className="tokyo_progress">
-										<div className="progress_inner" data-value="95">
-											<span>
-												<span className="label">ReactJS</span>
-												<span className="number">95%</span>
-											</span>
-											<div className="background">
-												<div className="bar">
-													<div
-														className="bar_in"
-														style={{ width: 95 + "%" }}
-													></div>
-												</div>
-											</div>
-										</div>
+					<div className="tokyo_progress" style={{ marginBottom: 40 }}>
+						<div id="skill-block">
+							<div id="skill-title">JavaScript & Python</div>
 
-										<div className="progress_inner" data-value="80">
-											<span>
-												<span className="label">JavaScript</span>
-												<span className="number">95%</span>
-											</span>
-											<div className="background">
-												<div className="bar">
-													<div
-														className="bar_in"
-														style={{ width: 80 + "%" }}
-													></div>
-												</div>
-											</div>
-										</div>
-
-										<div className="progress_inner" data-value="90">
-											<span>
-												<span className="label">Python</span>
-												<span className="number">80%</span>
-											</span>
-											<div className="background">
-												<div className="bar">
-													<div
-														className="bar_in"
-														style={{ width: 90 + "%" }}
-													></div>
-												</div>
-											</div>
-										</div>
-									</div>
-									{/* END PROGRESS */}
-								</div>
-								{/* END LEFT */}
-
-								<div className="right">
-									<div className="about_title">
-										<h3> </h3>
-									</div>
-									{/* END TITLE */}
-									<div className="tokyo_progress">
-										<div className="progress_inner" data-value="95">
-											<span>
-												<span className="label">Express</span>
-												<span className="number">95%</span>
-											</span>
-											<div className="background">
-												<div className="bar">
-													<div
-														className="bar_in"
-														style={{ width: 95 + "%" }}
-													></div>
-												</div>
-											</div>
-										</div>
-
-										<div className="progress_inner" data-value="90">
-											<span>
-												<span className="label">Flask</span>
-												<span className="number">95%</span>
-											</span>
-											<div className="background">
-												<div className="bar">
-													<div
-														className="bar_in"
-														style={{ width: 90 + "%" }}
-													></div>
-												</div>
-											</div>
-										</div>
-
-										<div className="progress_inner" data-value="85">
-											<span>
-												<span className="label">PostgreSQL</span>
-												<span className="number">95%</span>
-											</span>
-											<div className="background">
-												<div className="bar">
-													<div
-														className="bar_in"
-														style={{ width: 85 + "%" }}
-													></div>
-												</div>
-											</div>
-										</div>
-									</div>
-									{/* EDN TOKYO PROGRESS */}
-								</div>
-								{/* END RIGHT */}
+							<div id="skill-icons">
+								<SiJavascript size="3em" />
+								<SiPython size="3em" />
 							</div>
-							{/* END MYBOX */}
-
-							<div className="counter">
-								<div className="about_title">
-									<h3>Fun Facts</h3>
-								</div>
-								<ul>
-									<li>
-										<div className="list_inner">
-											<h3>4</h3>
-											<span>Published Projects</span>
-										</div>
-									</li>
-									<li>
-										<div className="list_inner">
-											<h3>9K+</h3>
-											<span>Lines of Code</span>
-										</div>
-									</li>
-								</ul>
-								{/* END COUNTER CONTENT */}
+						</div>
+						<div id="skill-block">
+							<div id="skill-title">React & Redux</div>
+							<div id="skill-icons">
+								<SiReact size="3em" />
+								<SiRedux size="3em" />
 							</div>
-							{/* END COUNTER */}
-
-							{/* END PARTNER SLIDER */}
+						</div>
+						<div id="skill-block">
+							<div id="skill-title">HTML & CSS</div>
+							<div id="skill-icons">
+								<SiHtml5 size="3em" />
+								<SiCss3 size="3em" />
+							</div>
+						</div>
+						<div id="skill-block">
+							<div id="skill-title">Express & Flask</div>
+							<div id="skill-icons">
+								<SiExpress size="3em" />
+								<SiFlask size="3em" />
+							</div>
+						</div>
+						<div id="skill-block">
+							<div id="skill-title">Sequelize & PostgreSQL</div>
+							<div id="skill-icons">
+								<SiSequelize size="3em" />
+								<SiPostgresql size="3em" />
+							</div>
 						</div>
 					</div>
+					{/* EDN TOKYO PROGRESS */}
 				</div>
-			</Modal>
-			{/* END ABOUT POPUP BOX */}
+				{/* END RIGHT */}
+			</div>
+			{/* END MYBOX */}
 		</>
 	);
 };

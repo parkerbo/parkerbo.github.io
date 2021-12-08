@@ -258,14 +258,6 @@ const Portfolio = () => {
 					{/* END CLOSE ICON */}
 					<div className="box_inner">
 						<div className="description_wrap scrollable">
-							<div className="image">
-								<div
-									className="main"
-									style={{
-										backgroundImage: "url(assets/img/portfolio/OpenBoard2.png)",
-									}}
-								></div>
-							</div>
 							{/* END IMAGE */}
 							<div className="portfolio_main_title">
 								<h3>OpenBoard</h3>
@@ -324,7 +316,14 @@ const Portfolio = () => {
 								</div>
 							</div>
 							{/* main_details */}
-
+							<div className="image">
+								<div
+									className="main"
+									style={{
+										backgroundImage: "url(assets/img/portfolio/OpenBoard2.png)",
+									}}
+								></div>
+							</div>
 							<div className="additional_images">
 								<ul className="gallery_zoom">
 									<li>
@@ -334,7 +333,8 @@ const Portfolio = () => {
 												<div
 													className="main"
 													style={{
-														backgroundImage: "url(assets/img/portfolio/OpenBoard3.png)",
+														backgroundImage:
+															"url(assets/img/portfolio/OpenBoard3.png)",
 													}}
 												></div>
 											</div>
@@ -369,107 +369,77 @@ const Portfolio = () => {
 					{/* END CLOSE ICON */}
 					<div className="box_inner">
 						<div className="description_wrap scrollable">
-							<div className="image">
-								<img src="assets/img/thumbs/4-3.jpg" alt="tumb" />
-								<div
-									className="main"
-									style={{
-										backgroundImage: "url(assets/img/portfolio/7.jpg)",
-									}}
-								></div>
-							</div>
 							{/* END IMAGE */}
 							<div className="portfolio_main_title">
-								<h3>Ave Simone</h3>
+								<h3>QuickJot</h3>
 								<span>Details</span>
 							</div>
 							{/* END portfolio_main_title */}
 							<div className="main_details">
 								<div className="textbox">
 									<p>
-										We live in a world where we need to move quickly and iterate
-										on our ideas as flexibly as possible. Building mockups
-										strikes the ideal balance between true-life representation
-										of the end product and ease of modification.
+										QuickJot is a note-taking application that allows notes and
+										notebooks to be created, organized, and searched for
 									</p>
 									<p>
-										Mockups are useful both for the creative phase of the
-										project - for instance when you're trying to figure out your
-										user flows or the proper visual hierarchy - and the
-										production phase when they will represent the target
-										product. Making mockups a part of your creative and
-										development process allows you to quickly and easily ideate.
+										In this project I implemented a quick search feature by
+										creating a slice of state in Redux that utilizes already
+										fetched user data to allow users to search against their
+										note and notebook titles. I also created a modal based form
+										environment by using React context and click event listeners
+										to allow for a seamless user experience when displaying and
+										submitting forms.
 									</p>
 								</div>
 								<div className="detailbox">
 									<ul>
 										<li>
-											<span className="first">Client</span>
-											<span>Alvaro Morata</span>
+											<span className="first">Technologies Used</span>
+											<span>
+												JavaScript | React | Redux | Express | Sequelize
+											</span>
 										</li>
 										<li>
-											<span className="first">Category</span>
-											<span>Details</span>
+											<span className="first">Created</span>
+											<span>October 2021</span>
 										</li>
 										<li>
-											<span className="first">Date</span>
-											<span>March 07, 2021</span>
-										</li>
-										<li>
-											<span className="first">Share</span>
-											<Social />
+											<span className="first">Links</span>
+											<div id="project-details-links">
+												<h5 style={{ marginRight: 20 }} id="project-link">
+													<a
+														href={`https://quick-jot-app.herokuapp.com/`}
+														target="_blank"
+														rel="noreferrer"
+													>
+														{" "}
+														Live{" "}
+													</a>
+												</h5>
+												<h5 id="project-link">
+													<a
+														href={`https://github.com/parkerbo/QuickJot`}
+														target="_blank"
+														rel="noreferrer"
+													>
+														Repo
+													</a>
+												</h5>
+											</div>
 											{/* END SOCIAL SHARE */}
 										</li>
 									</ul>
 								</div>
 							</div>
 							{/* main_details */}
-
-							<div className="additional_images">
-								<ul className="gallery_zoom">
-									<li>
-										<div className="list_inner">
-											<div className="my_image">
-												<img src="img/thumbs/4-2.jpg" alt="thumb" />
-												<div
-													className="main"
-													style={{
-														backgroundImage: "url(assets/img/portfolio/6.jpg)",
-													}}
-												></div>
-											</div>
-										</div>
-									</li>
-									{/* END SHOT */}
-									<li>
-										<div className="list_inner">
-											<div className="my_image">
-												<img src="img/thumbs/4-2.jpg" alt="thumb" />
-												<div
-													className="main"
-													style={{
-														backgroundImage: "url(assets/img/portfolio/5.jpg)",
-													}}
-												></div>
-											</div>
-										</div>
-									</li>
-									{/* END SHOT */}
-									<li>
-										<div className="list_inner">
-											<div className="my_image">
-												<img src="img/thumbs/4-2.jpg" alt="thumb" />
-												<div
-													className="main"
-													style={{
-														backgroundImage: "url(assets/img/portfolio/4.jpg)",
-													}}
-												></div>
-											</div>
-										</div>
-									</li>
-									{/* END SHOT */}
-								</ul>
+							<div className="image">
+								<img src="assets/img/thumbs/4-3.jpg" alt="tumb" />
+								<div
+									className="main"
+									style={{
+										backgroundImage: "url(assets/img/portfolio/QuickJot2.png)",
+									}}
+								></div>
 							</div>
 						</div>
 					</div>
@@ -492,15 +462,6 @@ const Portfolio = () => {
 					{/* END CLOSE ICON */}
 					<div className="box_inner">
 						<div className="description_wrap scrollable">
-							<div className="image">
-								<img src="assets/img/thumbs/4-3.jpg" alt="tumb" />
-								<div
-									className="main"
-									style={{
-										backgroundImage: "url(assets/img/portfolio/6.jpg)",
-									}}
-								></div>
-							</div>
 							{/* END IMAGE */}
 							<div className="portfolio_main_title">
 								<h3>ToTheMoon</h3>
@@ -510,44 +471,70 @@ const Portfolio = () => {
 							<div className="main_details">
 								<div className="textbox">
 									<p>
-										We live in a world where we need to move quickly and iterate
-										on our ideas as flexibly as possible. Building mockups
-										strikes the ideal balance between true-life representation
-										of the end product and ease of modification.
+										ToTheMoon is a stock trading platform clone based off of
+										Robinhood. ToTheMoon's purpose is to emulate stock trading
+										and investments for beginners. Purchase and sell shares of
+										stock to view your portfolio's progress. View live data
+										straight from real API fetch calls.
 									</p>
 									<p>
-										Mockups are useful both for the creative phase of the
-										project - for instance when you're trying to figure out your
-										user flows or the proper visual hierarchy - and the
-										production phase when they will represent the target
-										product. Making mockups a part of your creative and
-										development process allows you to quickly and easily ideate.
+										ToTheMoon was created in collaboration with three other
+										engineers during a week-long sprint utilizing user stories
+										and daily standups to delegate tasks for efficient
+										application completion.
 									</p>
 								</div>
 								<div className="detailbox">
 									<ul>
 										<li>
-											<span className="first">Client</span>
-											<span>Alvaro Morata</span>
+											<span className="first">Technologies Used</span>
+											<span>
+												JavaScript | React | Redux | Flask | SQLAlchemy |
+												IEXCloud API
+											</span>
 										</li>
 										<li>
-											<span className="first">Category</span>
-											<span>Details</span>
+											<span className="first">Created</span>
+											<span>October 2021</span>
 										</li>
 										<li>
-											<span className="first">Date</span>
-											<span>March 07, 2021</span>
-										</li>
-										<li>
-											<span className="first">Share</span>
-											<Social />
+											<span className="first">Links</span>
+											<div id="project-details-links">
+												<h5 style={{ marginRight: 20 }} id="project-link">
+													<a
+														href={`https://to-the--moon.herokuapp.com/`}
+														target="_blank"
+														rel="noreferrer"
+													>
+														{" "}
+														Live{" "}
+													</a>
+												</h5>
+												<h5 id="project-link">
+													<a
+														href={`https://github.com/NJSim/Robinhood2.0/`}
+														target="_blank"
+														rel="noreferrer"
+													>
+														Repo
+													</a>
+												</h5>
+											</div>
 											{/* END SOCIAL SHARE */}
 										</li>
 									</ul>
 								</div>
 							</div>
 							{/* main_details */}
-
+							<div className="image">
+								<img src="assets/img/thumbs/4-3.jpg" alt="tumb" />
+								<div
+									className="main"
+									style={{
+										backgroundImage: "url(assets/img/portfolio/ToTheMoon2.png)",
+									}}
+								></div>
+							</div>
 							<div className="additional_images">
 								<ul className="gallery_zoom">
 									<li>
@@ -557,40 +544,15 @@ const Portfolio = () => {
 												<div
 													className="main"
 													style={{
-														backgroundImage: "url(assets/img/portfolio/8.jpg)",
+														backgroundImage:
+															"url(assets/img/portfolio/ToTheMoon3.png)",
 													}}
 												></div>
 											</div>
 										</div>
 									</li>
 									{/* END SHOT */}
-									<li>
-										<div className="list_inner">
-											<div className="my_image">
-												<img src="img/thumbs/4-2.jpg" alt="thumb" />
-												<div
-													className="main"
-													style={{
-														backgroundImage: "url(assets/img/portfolio/2.jpg)",
-													}}
-												></div>
-											</div>
-										</div>
-									</li>
-									{/* END SHOT */}
-									<li>
-										<div className="list_inner">
-											<div className="my_image">
-												<img src="img/thumbs/4-2.jpg" alt="thumb" />
-												<div
-													className="main"
-													style={{
-														backgroundImage: "url(assets/img/portfolio/3.jpg)",
-													}}
-												></div>
-											</div>
-										</div>
-									</li>
+
 									{/* END SHOT */}
 								</ul>
 							</div>
@@ -615,62 +577,75 @@ const Portfolio = () => {
 					{/* END CLOSE ICON */}
 					<div className="box_inner">
 						<div className="description_wrap scrollable">
-							<div className="image">
-								<img src="assets/img/thumbs/4-3.jpg" alt="tumb" />
-								<div
-									className="main"
-									style={{
-										backgroundImage: "url(assets/img/portfolio/6.jpg)",
-									}}
-								></div>
-							</div>
 							{/* END IMAGE */}
 							<div className="portfolio_main_title">
-								<h3>OpenBoard</h3>
+								<h3>Equilibrium</h3>
 								<span>Details</span>
 							</div>
 							{/* END portfolio_main_title */}
 							<div className="main_details">
 								<div className="textbox">
 									<p>
-										We live in a world where we need to move quickly and iterate
-										on our ideas as flexibly as possible. Building mockups
-										strikes the ideal balance between true-life representation
-										of the end product and ease of modification.
+										Equilibrium is a full stack application that allows users to
+										create and view articles based on outdoor related
+										activities. Users can sign up, create posts, like and
+										comment on articles and create a customized feed based on
+										following certain topics.
 									</p>
-									<p>
-										Mockups are useful both for the creative phase of the
-										project - for instance when you're trying to figure out your
-										user flows or the proper visual hierarchy - and the
-										production phase when they will represent the target
-										product. Making mockups a part of your creative and
-										development process allows you to quickly and easily ideate.
-									</p>
+                  <p>
+                    Equilibrium was created in collaboration with two other software engineers over a weeklong sprint.
+                  </p>
 								</div>
 								<div className="detailbox">
 									<ul>
 										<li>
-											<span className="first">Client</span>
-											<span>Alvaro Morata</span>
+											<span className="first">Technologies Used</span>
+											<span>
+												JavaScript | PugJS | AJAX | Express | PostgreSQL
+											</span>
 										</li>
 										<li>
-											<span className="first">Category</span>
-											<span>Details</span>
+											<span className="first">Created</span>
+											<span>September 2021</span>
 										</li>
 										<li>
-											<span className="first">Date</span>
-											<span>March 07, 2021</span>
-										</li>
-										<li>
-											<span className="first">Share</span>
-											<Social />
+											<span className="first">Links</span>
+											<div id="project-details-links">
+												<h5 style={{ marginRight: 20 }} id="project-link">
+													<a
+														href={`https://equilibrium.herokuapp.com/`}
+														target="_blank"
+														rel="noreferrer"
+													>
+														{" "}
+														Live{" "}
+													</a>
+												</h5>
+												<h5 id="project-link">
+													<a
+														href={`https://github.com/benthere914/Equilibrium-Web-Forum`}
+														target="_blank"
+														rel="noreferrer"
+													>
+														Repo
+													</a>
+												</h5>
+											</div>
 											{/* END SOCIAL SHARE */}
 										</li>
 									</ul>
 								</div>
 							</div>
 							{/* main_details */}
-
+							<div className="image">
+								<img src="assets/img/thumbs/4-3.jpg" alt="tumb" />
+								<div
+									className="main"
+									style={{
+										backgroundImage: "url(assets/img/portfolio/Equilibrium2.png)",
+									}}
+								></div>
+							</div>
 							<div className="additional_images">
 								<ul className="gallery_zoom">
 									<li>
@@ -680,40 +655,14 @@ const Portfolio = () => {
 												<div
 													className="main"
 													style={{
-														backgroundImage: "url(assets/img/portfolio/8.jpg)",
+														backgroundImage: "url(assets/img/portfolio/Equilibrium3.png)",
 													}}
 												></div>
 											</div>
 										</div>
 									</li>
 									{/* END SHOT */}
-									<li>
-										<div className="list_inner">
-											<div className="my_image">
-												<img src="img/thumbs/4-2.jpg" alt="thumb" />
-												<div
-													className="main"
-													style={{
-														backgroundImage: "url(assets/img/portfolio/2.jpg)",
-													}}
-												></div>
-											</div>
-										</div>
-									</li>
-									{/* END SHOT */}
-									<li>
-										<div className="list_inner">
-											<div className="my_image">
-												<img src="img/thumbs/4-2.jpg" alt="thumb" />
-												<div
-													className="main"
-													style={{
-														backgroundImage: "url(assets/img/portfolio/3.jpg)",
-													}}
-												></div>
-											</div>
-										</div>
-									</li>
+
 									{/* END SHOT */}
 								</ul>
 							</div>
